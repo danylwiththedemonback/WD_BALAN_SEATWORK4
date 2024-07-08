@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/zyx-0314/">
-    <img src="../../assets/img/Masthead_Overwatch2_Logo.avif" alt="Panda" width="130" height="100">
+    <img src="../../danylwiththedemonback/WD_BALAN_SEATWORK4/assets/img/Lucio.webp alt="Panda" width="130" height="100">
   </a>
 
   <h3 align="center">SEWATWORK 4</h3>
