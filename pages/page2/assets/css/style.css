@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+
+header img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+    color: #f39c12;
+}
+
+nav ul li a:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f39c12;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover:before {
+    width: 100%;
+}
+.intro, .features, .testimonials {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.intro::before, .features::before, .testimonials::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.intro *:not(.overlay), .features *:not(.overlay), .testimonials *:not(.overlay) {
+    position: relative;
+    z-index: 1;
+}
+
+.intro {
+    background-image: url('../../../../assets/img/traintracks.jpg');
+    height: 60vh; /* Adjust height for better proportion */
+}
+
+.intro h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.shop-by-category {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto; /* Adjust height for better proportion */
+}
+
+.shop-by-category h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+
+.category-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    transform: scale(1.1);
+}
+
+.product-list {
+    padding: 4rem;
+    background-color: #fff;
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.product {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+    width: calc(33.33% - 2rem);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.buy-btn {
+    background-color: #006400;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.buy-btn:hover {
+    background-color: #228B22;
+    transform: scale(1.1);
+}
+
+.features {
+    background-image: url('../../../../assets/img/bgtimbs.avif'); /* Add the path to your background image */
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.features ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.features li {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.testimonials {
+    background-image: url('../../../../assets/img/timbsbg.webp'); /* Add the path to your background image */
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimonials blockquote {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 1rem auto;
+    max-width: 600px;
+}

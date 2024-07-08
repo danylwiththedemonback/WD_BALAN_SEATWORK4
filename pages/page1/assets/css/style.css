@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+
+header img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+    color: #f39c12;
+}
+
+nav ul li a:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f39c12;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover:before {
+    width: 100%;
+}
+
+.header-right {
+    background-color: rgba(255, 255, 255, 0.6); /* White with 60% opacity */
+    padding: 0.5rem 1rem;
+    border-radius: 1rem; /* Rounded corners */
+    margin-right: 1rem; /* Adjust spacing from the right */
+}
+
+.play-button {
+    background-color: #f90;
+    color: #000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem; /* Rounded button */
+}
+
+/* Adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+    .header-left {
+        margin-left: 0.5rem;
+    }
+    .header-right {
+        margin-right: 0.5rem;
+    }
+}
+
+.overwatch-logo {
+    max-width: 200px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure it behaves as a block element */
+    margin: 0 auto; /* Center align if needed */
+}
+
+.hero-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-image: url("../../../../assets/img/owbg.gif");
+    height: 60vh; /* Adjust height for better proportion */
+    background-size: 200%;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section button {
+    background-color: #f90;
+    color: #000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.news-section {
+    padding: 2rem 1rem;
+    background-image: url("../../../../assets/img/2600_Silver_Background.avif"); /* Add background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.news-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.news-section article {
+    background-color: rgba(51, 51, 51, 0.8); /* Slightly transparent background */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Transition for smooth animation */
+}
+
+.news-section article:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.news-section article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.news-section article h3 {
+    font-size: 1rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.news-section article p {
+    font-size: 0.875rem;
+    color: #ccc;
+}
+
+.view-all {
+    display: block;
+    margin: 2rem auto 0;
+    background-color: #f90;
+    color: #000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0.5rem; /* Rounded button */
+}
+
+.hero-info {
+    background-color: #0055aa;
+    padding: 2rem;
+    text-align: center;
+    color: #ffffff;
+    background-image: url("../../../../assets/img/darkerblue.jpg");
+    background-size: 200%;
+    background-position: center;
+    position: relative;
+    overflow: hidden; /* Ensure overflow hidden to contain child elements */
+}
+
+/* Styles for Info Items */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.info-item {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.info-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.info-item h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.info-item p {
+    font-size: 0.875rem;
+    color: #ccc;
+}
+
+/* Hover Effect */
+.info-item:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten background on hover */
+}
+
+/* Animation for Info Items */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-in animation to all children of .info-grid */
+.info-grid > * {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    background-image: url('path-to-footer-image.jpg'); /* Add background image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Existing styles remain unchanged */
+
+.maps-section {
+    padding: 2rem 1rem;
+    background-color: #464db1;
+    background-image: url("../../../../assets/img/2600_Silver_Background.avif");
+    color: #ffffff;
+    text-align: center; /* Center align text */
+    position: relative; /* Add for positioning buttons */
+}
+
+.maps-section h1, .maps-section p {
+    margin: 0 auto;
+    text-align: center; /* Center align text */
+}
+
+.maps-section h1 {
+    margin-bottom: 1rem; /* Add some spacing below the heading */
+}
+
+.maps-section p {
+    margin-bottom: 2rem; /* Add some spacing below the paragraph */
+}
+
+.maps-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Snap scrolling */
+    gap: 2rem; /* Adjust the gap between map items */
+    padding: 1rem 0; /* Add padding for better spacing */
+}
+
+.map-item {
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    position: relative;
+    overflow: hidden;
+    width: 300px; /* Set a fixed width for each map item */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.map-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.map-item:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.map-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    text-align: left;
+}
+
+.map-item:hover .map-details {
+    opacity: 1; /* Show details on hover */
+}
+
+.map-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.map-details p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.explore-button {
+    background-color: #f90;
+    color: #000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+/* Style for the navigation buttons */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 0.5rem;
+}
+
+.nav-button.left {
+    left: 1rem;
+}
+
+.nav-button.right {
+    right: 1rem;
+}
+
+
+.heroes-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.heroes-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.heroes-banner img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.heroes-text {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto; /* Center align text */
+}
+
+.heroes-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.heroes-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.heroes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.hero-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-size: cover; /* Ensure the background covers the entire container */
+    background-position: center; /* Center the background image */
+    margin: 0 auto; /* Center the hero item within its container */
+}
+
+.hero-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 0.5rem;
+}
+
+.hero-item:hover {
+    transform: scale(1.05);
+}
+
+/* Specific hero backgrounds */
+.hero-item:nth-child(1) {
+    background-image: url("../../../../assets/img/paraiso.jpg");
+}
+
+.hero-item:nth-child(2) {
+    background-image: url("../../../../assets/img/kingsrow.jpg");
+}
+
+.hero-item:nth-child(3) {
+    background-image: url("../../../../assets/img/Numbani.webp");
+}
+
+.hero-details {
+    position: absolute;
+    bottom: -100%; /* Start hidden below the hero item */
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: #f90;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out; /* Transition for opacity and bottom position */
+    text-align: center;
+}
+
+.hero-item:hover .hero-details {
+    opacity: 1;
+    bottom: 0; /* Slide up to show details on hover */
+}
+
+.hero-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-details p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #2c2f48;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-top {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.stay-connected h3 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom ul li {
+    margin: 0 10px;
+}
+
+.footer-bottom ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-bottom p {
+    margin: 10px 0;
+}
+
+.footer-bottom img {
+    width: 120px;
+    margin: 20px 0;
+}
+
+.legal-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.legal-links li {
+    margin: 0 10px;
+}
+
+.legal-links li a {
+    color: #ffffff;
+    text-decoration: none;
+}
