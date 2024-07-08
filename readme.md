@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/zyx-0314/">
-    <img src="../../danylwiththedemonback/WD_BALAN_SEATWORK4/assets/img/Lucio.webp alt="Panda" width="130" height="100">
+    <img src="../../danylwiththedemonback/WD_BALAN_SEATWORK4/assets/img/Lucio.webp" alt="Panda" width="130" height="100">
   </a>
 
   <h3 align="center">SEWATWORK 4</h3>
@@ -133,4 +133,4 @@ WD-ProjectName
 wait for the landing page to load then you will have two buttons you can choose between overwatch or timberlands and in those two it will showcase different features styles
 
 ## DEPLOYMENT LINK
-
+https://danylwiththedemonback.github.io/WD_BALAN_SEATWORK4/index.html
